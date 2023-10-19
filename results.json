@@ -1,0 +1,238 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\navya\\Desktop\\Struggle\\test\\playwright.config.js",
+    "rootDir": "C:/Users/navya/Desktop/Struggle/test/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "C:\\Users\\navya\\Desktop\\Struggle\\test\\node_modules\\allure-playwright\\dist\\index.js",
+        {
+          "outputFolder": "my-allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/navya/Desktop/Struggle/test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/navya/Desktop/Struggle/test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/navya/Desktop/Struggle/test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/navya/Desktop/Struggle/test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/navya/Desktop/Struggle/test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/navya/Desktop/Struggle/test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.39.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Reporters.spec.js",
+      "file": "Reporters.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Reporters test1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 28481,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-10-18T19:19:54.444Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "399bcd1299f62012f68d-b6a9e26aa7877a078929",
+          "file": "Reporters.spec.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "Test2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 17817,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-10-18T19:20:30.361Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "399bcd1299f62012f68d-064de90a5d2bda0e3e44",
+          "file": "Reporters.spec.js",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Test3",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 11492,
+                  "error": {
+                    "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"nopCommerce demo stor\"\u001b[39m\nReceived string: \u001b[31m\"nopCommerce demo stor\u001b[7me\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"nopCommerce demo stor\"\u001b[39m\nReceived string: \u001b[31m\"nopCommerce demo stor\u001b[7me\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\n    at C:\\Users\\navya\\Desktop\\Struggle\\test\\tests\\Reporters.spec.js:14:24",
+                    "location": {
+                      "file": "C:\\Users\\navya\\Desktop\\Struggle\\test\\tests\\Reporters.spec.js",
+                      "column": 24,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m test(\u001b[32m'Test3'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demo.nopcommerce.com/'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'nopCommerce demo stor'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\navya\\Desktop\\Struggle\\test\\tests\\Reporters.spec.js",
+                        "column": 24,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"nopCommerce demo stor\"\u001b[39m\nReceived string: \u001b[31m\"nopCommerce demo stor\u001b[7me\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\" dir=\"ltr\" class=\"html-home-page\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"nopCommerce demo store\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 12 |\u001b[39m test(\u001b[32m'Test3'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://demo.nopcommerce.com/'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'nopCommerce demo stor'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\navya\\Desktop\\Struggle\\test\\tests\\Reporters.spec.js:14:24\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-10-18T19:20:48.230Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\navya\\Desktop\\Struggle\\test\\test-results\\Reporters-Test3-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\navya\\Desktop\\Struggle\\test\\tests\\Reporters.spec.js",
+                    "column": 24,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "399bcd1299f62012f68d-6ef640acef5b31d772c8",
+          "file": "Reporters.spec.js",
+          "line": 12,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2023-10-18T19:19:51.183Z",
+    "duration": 73512.72
+  }
+}

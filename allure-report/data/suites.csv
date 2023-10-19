@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Oct 19 00:49:54 IST 2023","Thu Oct 19 00:50:30 IST 2023","35895","chromium","Reporters.spec.js","","","","Reporters test1",""
+"failed","Thu Oct 19 00:50:48 IST 2023","Thu Oct 19 00:51:00 IST 2023","11951","chromium","Reporters.spec.js","","","","Test3",""
+"passed","Thu Oct 19 00:50:30 IST 2023","Thu Oct 19 00:50:48 IST 2023","17762","chromium","Reporters.spec.js","","","","Test2",""
