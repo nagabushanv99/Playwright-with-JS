@@ -10,7 +10,8 @@
     "@playwright/test": "^1.39.0",
     "allure-commandline": "^2.24.1",
     "allure-playwright": "^2.9.2",
-    "cucumber": "^6.0.7"
+    "cucumber": "^6.0.7",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "@cucumber/cucumber": "^9.6.0",
